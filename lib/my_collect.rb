@@ -2,7 +2,7 @@ def my_collect(array)
   if block_given?
     count = 0
     new_collection = []
-    while i < array.length
+    while count < array.length
       new_collection << yield(array[i])
       count += 1
     end
