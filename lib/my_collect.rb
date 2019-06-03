@@ -10,3 +10,4 @@ def my_collect(array)
   else
     return "This collection is empty."
 end
+end
