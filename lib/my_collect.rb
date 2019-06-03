@@ -1,5 +1,5 @@
 def my_collect(array)
-  if block_given?
+  #if block_given?
     count = 0
     new_collection = []
     while count < array.length
@@ -7,9 +7,7 @@ def my_collect(array)
       count += 1
     end
     new_collection
-  else
-    return "This collection is empty."
+  #else
+    #return "This collection is empty."
+#end
 end
-end
-
-my_collect(['ruby', 'javascript', 'python', 'objective-c']) {|language| language.upcase}
