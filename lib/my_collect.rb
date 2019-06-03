@@ -6,7 +6,7 @@ def my_collect(array)
       new_collection << yield(array[i])
       count += 1
     end
-    collection
+    new_collection
   else
     return "This collection is empty."
 end
