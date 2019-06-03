@@ -3,7 +3,7 @@ def my_collect(array)
     count = 0
     new_collection = []
     while count < array.length
-     yield(array[i])
+      new_collection << yield(array[i])
       count += 1
     end
     new_collection
@@ -11,3 +11,5 @@ def my_collect(array)
     return "This collection is empty."
 end
 end
+
+my_collect(['ruby', 'javascript', 'python', 'objective-c']) {|language| language.upcase}
